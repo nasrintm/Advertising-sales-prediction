@@ -1,38 +1,78 @@
-# Advertising Sales Prediction using Linear Regression
+# Advertising Sales Prediction Using Linear Regression
 
-Individual assignment - Machine Learning Application (CO5).
+## About the Project
+This project uses Machine Learning and Linear Regression to predict sales based on advertising expenditure on TV, Radio, and Newspaper. It analyzes advertising data to understand the relationship between advertising budgets and sales.
 
-## Files
+## Features
+- Sales prediction using Linear Regression
+- Analysis of advertising expenditure
+- Trained Machine Learning model
+- Prediction based on advertising data
+- Model evaluation and performance analysis
 
-| File | Purpose |
-|---|---|
-| `Advertising_Budget_and_Sales.csv` | The dataset (200 markets: TV, Radio, Newspaper budgets and Sales) |
-| `train_model.py` | Preprocessing, model comparison, 5-fold CV, evaluation, saves plots and the model |
-| `desktop_app.py` | Desktop application (Tkinter) |
-| `predictor.py` | Prediction engine used by the app (standard library only) |
-| `build_report.py` | Rebuilds `Assignment2_Report.docx` from the saved results |
-| `plots/` | The 7 graphs produced by `train_model.py` |
-| `model.json`, `sales_model.joblib`, `results.json`, `model_comparison.csv` | Outputs of `train_model.py` |
-| `Assignment2_Report.docx` | The report (A4, 5 pages) |
+## Dataset Details
+- **Dataset Name:** Advertising Sales Dataset
+- **Dataset Source:** Enter your actual dataset source
+- **Number of Records:** Enter the actual number of records
+- **Input Features:** TV, Radio, Newspaper
+- **Target Variable:** Sales
 
-## Run (Python 3.9+)
+## Model Performance
+- **Algorithm:** Linear Regression
+- **R² Score:** Enter your actual result
+- **MAE:** Enter your actual result
+- **MSE:** Enter your actual result
+- **RMSE:** Enter your actual result
 
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Joblib
+
+## Project Files
+- `predictor.py` – Makes sales predictions.
+- `train_model.py` – Trains and evaluates the model.
+- `sales_model.joblib` – Saved machine learning model.
+- `results.json` – Stores model evaluation results.
+- `requirements.txt` – Required Python libraries.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/nasrintm/Advertising-sales-prediction.git
+
+ ```bash
+cd Advertising-sales-prediction
 ```
+
+Install the required libraries:
+
+```bash
 pip install -r requirements.txt
-python train_model.py        # trains, evaluates, writes plots/ and model.json
-streamlit run app.py         # opens the Streamlit web app
-python build_report.py       # optional: regenerates the report
 ```
 
-The project also includes a compatibility wrapper at `desktop_app.py`, which launches the same Streamlit app if you run it directly.
+## Run the Project
 
-Run all commands from this folder; the app looks for `model.json`, the CSV and `plots/` next to itself.
+Run the prediction script:
 
-## Optional: single-file Windows .exe (not tested)
-
-```
-pip install pyinstaller
-pyinstaller --onefile --windowed app.py --add-data "model.json;." --add-data "results.json;." --add-data "model_comparison.csv;." --add-data "Advertising_Budget_and_Sales.csv;." --add-data "plots;plots"
+```bash
+python predictor.py
 ```
 
-(On macOS/Linux use `:` instead of `;` in `--add-data`.)
+To train the model:
+
+```bash
+python train_model.py
+```## Project Report
+
+The complete project report is available in the repository.
+
+## Author
+
+Nasrin TM
