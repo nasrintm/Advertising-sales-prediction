@@ -1,0 +1,4 @@
+Model,CV R2,CV R2 std,CV RMSE,Test MAE,Test MSE,Test RMSE,Test R2,Test Adj R2,Train R2
+Multiple Linear Regression,0.8703,0.0718,1.6758,1.4608,3.1741,1.7816,0.8994,0.8911,0.8957
+Polynomial Linear Regression (deg 2),0.9778,0.017,0.6759,0.5262,0.4129,0.6426,0.9869,0.983,0.9861
+Random Forest,0.966,0.0135,0.8942,0.6148,0.549,0.7409,0.9826,0.9812,0.9967

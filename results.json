@@ -1,0 +1,155 @@
+{
+ "data_file": "Advertising_Budget_and_Sales.csv",
+ "original_labels": {
+  "TV": "TV Ad Budget ($)",
+  "Radio": "Radio Ad Budget ($)",
+  "Newspaper": "Newspaper Ad Budget ($)",
+  "Sales": "Sales ($)"
+ },
+ "preprocessing": {
+  "rows_raw": 200,
+  "missing_values": 0,
+  "duplicate_rows": 0,
+  "text_columns": 0,
+  "dropped_index_columns": [
+   "Unnamed: 0"
+  ],
+  "rows_clean": 200,
+  "iqr_outliers": {
+   "TV": 0,
+   "Radio": 0,
+   "Newspaper": 2,
+   "Sales": 0
+  }
+ },
+ "n_train": 160,
+ "n_test": 40,
+ "describe": {
+  "TV": {
+   "count": 200.0,
+   "mean": 147.042,
+   "std": 85.854,
+   "min": 0.7,
+   "25%": 74.375,
+   "50%": 149.75,
+   "75%": 218.825,
+   "max": 296.4
+  },
+  "Radio": {
+   "count": 200.0,
+   "mean": 23.264,
+   "std": 14.847,
+   "min": 0.0,
+   "25%": 9.975,
+   "50%": 22.9,
+   "75%": 36.525,
+   "max": 49.6
+  },
+  "Newspaper": {
+   "count": 200.0,
+   "mean": 30.554,
+   "std": 21.779,
+   "min": 0.3,
+   "25%": 12.75,
+   "50%": 25.75,
+   "75%": 45.1,
+   "max": 114.0
+  },
+  "Sales": {
+   "count": 200.0,
+   "mean": 14.022,
+   "std": 5.217,
+   "min": 1.6,
+   "25%": 10.375,
+   "50%": 12.9,
+   "75%": 17.4,
+   "max": 27.0
+  }
+ },
+ "correlation_with_sales": {
+  "TV": 0.7822244248616067,
+  "Radio": 0.5762225745710555,
+  "Newspaper": 0.22829902637616545
+ },
+ "radio_newspaper_corr": 0.35410375076117534,
+ "tv_radio_corr": 0.05480866446583008,
+ "baseline_intercept": 2.9790673381226256,
+ "baseline_coef": {
+  "TV": 0.044729517468716326,
+  "Radio": 0.1891950542343766,
+  "Newspaper": 0.0027611143413672056
+ },
+ "baseline_coef_standardised": {
+  "TV": 3.7641961751469992,
+  "Radio": 2.792306650198436,
+  "Newspaper": 0.05597551446265309
+ },
+ "final_model": "Polynomial Linear Regression (deg 2)",
+ "best_cv_overall": "Polynomial Linear Regression (deg 2)",
+ "cv": {
+  "Multiple Linear Regression": {
+   "cv_r2_mean": 0.8702645398521047,
+   "cv_r2_std": 0.07184410818459883,
+   "cv_rmse_mean": 1.6758098322907151,
+   "cv_rmse_std": 0.26601243715532236
+  },
+  "Polynomial Linear Regression (deg 2)": {
+   "cv_r2_mean": 0.977834707182532,
+   "cv_r2_std": 0.017043090559078055,
+   "cv_rmse_mean": 0.6758984496775746,
+   "cv_rmse_std": 0.2784180654929916
+  },
+  "Random Forest": {
+   "cv_r2_mean": 0.9660233359018969,
+   "cv_r2_std": 0.013547250217901445,
+   "cv_rmse_mean": 0.8941948615926405,
+   "cv_rmse_std": 0.21088724982846926
+  }
+ },
+ "test": {
+  "Multiple Linear Regression": {
+   "MAE": 1.4607567168117606,
+   "MSE": 3.174097353976105,
+   "RMSE": 1.7815996615334504,
+   "R2": 0.899438024100912,
+   "Adj_R2": 0.8910578594426547
+  },
+  "Polynomial Linear Regression (deg 2)": {
+   "MAE": 0.526179444404374,
+   "MSE": 0.4129102285379009,
+   "RMSE": 0.642580912055362,
+   "R2": 0.9869181490609604,
+   "Adj_R2": 0.9829935937792486
+  },
+  "Random Forest": {
+   "MAE": 0.6148250000000018,
+   "MSE": 0.549004563888887,
+   "RMSE": 0.7409484218816361,
+   "R2": 0.982606398744158,
+   "Adj_R2": 0.9811569319728378
+  }
+ },
+ "train": {
+  "Multiple Linear Regression": {
+   "MAE": 1.1984678961500135,
+   "MSE": 2.705129423081414,
+   "RMSE": 1.644727765644337,
+   "R2": 0.8957008271017818,
+   "Adj_R2": 0.893695073776816
+  },
+  "Polynomial Linear Regression (deg 2)": {
+   "MAE": 0.4089721951355072,
+   "MSE": 0.36039667447012225,
+   "RMSE": 0.6003304710491733,
+   "R2": 0.986104518792419,
+   "Adj_R2": 0.9852707899199642
+  },
+  "Random Forest": {
+   "MAE": 0.2105312500000016,
+   "MSE": 0.08633735486111138,
+   "RMSE": 0.29383218826587293,
+   "R2": 0.9966711704714015,
+   "Adj_R2": 0.9966071545189285
+  }
+ }
+}

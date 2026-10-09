@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+joblib
+python-docx
+Pillow
+streamlit
+# app.py is the main app entry point and runs with Streamlit.
+# Desktop Tkinter support is retained only as a compatibility wrapper.
